@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const valorFGTS = calcularFGTS(salarioBruto);
         const salarioLiquido = calcularSalarioLiquido(salarioBruto, valorINSS);
 
-        inssSpan.textContent = R$ ${valorINSS.toFixed(2)};
-        fgtsSpan.textContent = R$ ${valorFGTS.toFixed(2)};
-        liquidoSpan.textContent = R$ ${salarioLiquido.toFixed(2)};
+        inssSpan.textContent = `R$ ${valorINSS.toFixed(2)}`;
+        fgtsSpan.textContent = `R$ ${valorFGTS.toFixed(2)}`;
+        liquidoSpan.textContent = `R$ ${salarioLiquido.toFixed(2)}`;
     });
 
     function calcularINSS(salarioBruto) {
